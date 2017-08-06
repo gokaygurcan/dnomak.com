@@ -293,7 +293,7 @@
       this.svgTurkiyeHaritasiFunc();
     },
     methods: {
-      /* eslint dot-notation: ["error", { "allowPattern": "^[a-z]+$" }]*/
+      /* eslint dot-notation: ["error", { "allowPattern": "^[a-z]+$" }] */
       svgTurkiyeHaritasiFunc() {
         const element = document.querySelector('#svg-turkiye-haritasi');
         const info = document.querySelector('.il-isimleri');
