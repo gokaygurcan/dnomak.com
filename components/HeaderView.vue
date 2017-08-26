@@ -9,7 +9,7 @@
             .xl-w4.xl-h40.xl-br4.xl-ba-white
           .col.xl-tac
             a.xl-h40.xl-lh40.xl-vam.xl-dib.xl-fs30.xl-co-white.md-mt16(href="https://github.com/dnomak/svg-turkiye-haritasi", target="_blank") SVG Türkiye Haritası
-        template(v-if="$route.params.id")
+        template(v-if="$route.params.username")
           .col.md-hidden
             .xl-w4.xl-h40.xl-br4.xl-ba-white
           .col.xl-tac

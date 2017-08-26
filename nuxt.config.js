@@ -6,17 +6,31 @@ const graph = graphql("https://api.graph.cool/simple/v1/dnomak", {
 })
 
 const queryAllHumans = graph(`query {
-  allHumans {
+  allHumans(orderBy: createdAt_DESC, filter: {private: false}) {
+    id
+    name
+    title
     username
+    videoId
+    tags {
+      name
+    }
+    accounts {
+      username
+      website {
+        url
+        name
+      }
+    }
+    times {
+      second
+      question {
+        name
+        nameEnglish
+      }
+    }
   }
 }`)
-
-const humans = []
-queryAllHumans().then(function (results) {
-  forEach(results.allHumans, function (human) {
-    humans.push(human.username)
-  })
-})
 
 module.exports = {
   head: {
@@ -76,12 +90,26 @@ module.exports = {
         }
       }
     ],
-    vendor: ['vue-i18n']
+    vendor: ['vue-i18n', 'vue-youtube-embed']
   },
-  plugins: ['~plugins/i18n'],
+  plugins: [
+    { src: '~/plugins/i18n' },
+    { src: '~/plugins/youtube', ssr: false }
+  ],
   generate: {
-    routes () {
-      return humans
+    async routes () {
+      const urls = [
+        '/',
+        '/svg-turkiye-haritasi'
+      ]
+      const results = await queryAllHumans()
+      forEach(results.allHumans, function (human) {
+        urls.push({
+          route: `/${human.username}`,
+          payload: human
+        })
+      })
+      return urls
     }
   }
 }
