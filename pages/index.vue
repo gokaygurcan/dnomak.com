@@ -74,7 +74,23 @@
     },
     head () {
       return {
-        title: 'Doğukan Güven Nomak'
+        title: 'Doğukan Güven Nomak',
+        meta: [
+          { name: 'description', hid: 'description', content: 'Frontend Developer' },
+          // Open Grapg
+          { name: 'og:title', content: 'Doğukan Güven Nomak' },
+          { name: 'og:description', content: 'Frontend Developer' },
+          { name: 'og:type', content: 'website' },
+          { name: 'og:url', content: `http://dnomak.com` },
+          { name: 'og:image', content: `http://dnomak.com/img/avatar/dnomak.jpg` },
+          // Twitter Card
+          { name: 'twitter:card', content: 'summary' },
+          { name: 'twitter:site', content: '@dnomak' },
+          { name: 'twitter:title', content: 'Doğukan Güven Nomak' },
+          { name: 'twitter:description', content: 'Frontend Developer' },
+          { name: 'twitter:image', content: `http://dnomak.com/img/avatar/dnomak.jpg` },
+          { name: 'twitter:image:alt', content: 'Doğukan Güven Nomak' }
+        ]
       }
     },
     data () {

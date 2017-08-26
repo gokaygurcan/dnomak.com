@@ -68,14 +68,27 @@
     },
     head () {
       return {
-        title: this.human.name
+        title: this.human.name,
+        meta: [
+          { name: 'description', hid: 'description', content: this.human.title },
+          // Open Grapg
+          { name: 'og:title', content: this.human.name },
+          { name: 'og:description', content: this.human.title },
+          { name: 'og:type', content: 'website' },
+          { name: 'og:url', content: `http://dnomak.com/${this.human.username}` },
+          { name: 'og:image', content: `http://dnomak.com/img/avatar/${this.human.username}.jpg` },
+          // Twitter Card
+          { name: 'twitter:card', content: 'summary' },
+          { name: 'twitter:site', content: '@dnomak' },
+          { name: 'twitter:title', content: this.human.name },
+          { name: 'twitter:description', content: this.human.title },
+          { name: 'twitter:image', content: `http://dnomak.com/img/avatar/${this.human.username}.jpg` },
+          { name: 'twitter:image:alt', content: this.human.name }
+        ]
       }
     },
     data () {
       return {
-        human: null,
-        accounts: null,
-        times: null,
         questionTime: 0,
         player: {
           j: {
