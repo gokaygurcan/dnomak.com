@@ -1,11 +1,9 @@
-/* eslint-disable no-param-reassign, import/first */
+import graphConnection from '../../globals/graph'
+import { store } from '../../globals/mixins'
+import { gql } from '../../globals/utils'
+import sortBy from 'lodash/sortBy'
 
-import { graph } from '../../globals/graph';
-import { store } from '../../globals/mixins';
-import { gql } from '../../globals/utils';
-import sortBy from 'lodash/sortBy';
-
-const queryAllTimes = graph.query(gql`($username: String!) {
+const queryAllTimes = graphConnection.graph.query(gql`($username: String!) {
   allTimes(filter: {human: {username: $username}}) {
     second
     human {
@@ -16,27 +14,27 @@ const queryAllTimes = graph.query(gql`($username: String!) {
       nameEnglish
     }
   }
-}`);
+}`)
 
 export default store({
   state: {
-    times: [],
+    times: []
   },
   getters: {
     times: state => sortBy(state.times, ['second']),
     timeByQuestionId: state => questionId => state.times.filter(
-      times => times.id === questionId,
-    )[0],
+      times => times.id === questionId
+    )[0]
   },
   actions: {
-    async getAllTimes({ commit }, username) {
-      const times = await queryAllTimes({ username });
-      commit('SET_ALL_TIMES', times.allTimes);
-    },
+    async getAllTimes ({ commit }, username) {
+      const times = await queryAllTimes({ username })
+      commit('SET_ALL_TIMES', times.allTimes)
+    }
   },
   mutations: {
-    SET_ALL_TIMES(state, result) {
-      state.times = result;
-    },
-  },
-});
+    SET_ALL_TIMES (state, result) {
+      state.times = result
+    }
+  }
+})

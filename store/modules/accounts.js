@@ -1,10 +1,8 @@
-/* eslint-disable no-param-reassign */
+import graphConnection from '../../globals/graph'
+import { store } from '../../globals/mixins'
+import { gql } from '../../globals/utils'
 
-import { graph } from '../../globals/graph';
-import { store } from '../../globals/mixins';
-import { gql } from '../../globals/utils';
-
-const queryAllAccounts = graph.query(gql`($username: String!) {
+const queryAllAccounts = graphConnection.graph.query(gql`($username: String!) {
   allAccounts(filter: {human: {username: $username}}) {
     username
     website {
@@ -15,24 +13,24 @@ const queryAllAccounts = graph.query(gql`($username: String!) {
       username
     }
   }
-}`);
+}`)
 
 export default store({
   state: {
-    accounts: [],
+    accounts: []
   },
   getters: {
-    accounts: state => state.accounts,
+    accounts: state => state.accounts
   },
   actions: {
-    async getAllAccounts({ commit }, username) {
-      const accounts = await queryAllAccounts({ username });
-      commit('SET_ALL_ACCOUNTS', accounts.allAccounts);
-    },
+    async getAllAccounts ({ commit }, username) {
+      const accounts = await queryAllAccounts({ username })
+      commit('SET_ALL_ACCOUNTS', accounts.allAccounts)
+    }
   },
   mutations: {
-    SET_ALL_ACCOUNTS(state, result) {
-      state.accounts = result;
-    },
-  },
-});
+    SET_ALL_ACCOUNTS (state, result) {
+      state.accounts = result
+    }
+  }
+})

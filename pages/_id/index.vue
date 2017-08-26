@@ -8,33 +8,30 @@
 </template>
 
 <script>
-  /* eslint-disable import/no-extraneous-dependencies */
-
-  import { mapGetters } from 'vuex';
+  import { mapGetters } from 'vuex'
 
   export default {
-    async fetch({ store, params }) {
-      await store.dispatch('humans/getHuman', params.id);
-      await store.dispatch('accounts/getAllAccounts', params.id);
-      await store.dispatch('times/getAllTimes', params.id);
+    async fetch ({ store, params }) {
+      await store.dispatch('humans/getHuman', params.id)
+      await store.dispatch('accounts/getAllAccounts', params.id)
+      await store.dispatch('times/getAllTimes', params.id)
     },
     layout: 'main',
-    head() {
+    head () {
       return {
-        title: this.human.name,
-      };
+        title: this.human.name
+      }
     },
     computed: {
       ...mapGetters('humans', [
-        'human',
+        'human'
       ]),
       ...mapGetters('accounts', [
-        'accounts',
+        'accounts'
       ]),
       ...mapGetters('times', [
-        'times',
-      ]),
-    },
-
-  };
+        'times'
+      ])
+    }
+  }
 </script>

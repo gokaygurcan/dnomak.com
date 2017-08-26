@@ -1,4 +1,4 @@
-/*! Pixel Perfect CSS 1.0.2 | Rocket Settings | Scss | MIT License | pixelperfectcss.com */
+/*! Pixel Perfect CSS 1.0.2 | dnomak.com Settings | Scss | MIT License | pixelperfectcss.com */
 
 // breakpoint
 $pixelperfectcss-breakpoint: (
@@ -116,8 +116,10 @@ $property-position-value: (
   "0",
   "8",
   "16",
+  "24",
   "-8",
   "-16",
+  "-24",
 );
 $selector-position-value: (
   "cl": "not-breakpoint-class",
@@ -162,7 +164,9 @@ $selector-display: (
 
 // width
 $property-width: (
-  16,
+  "4",
+  "16",
+  "144",
 );
 $selector-width: (
   "cl": "not-breakpoint-class",
@@ -191,7 +195,7 @@ $property-line-height: (
   "24",
   "36",
   "40",
-  "56"
+  "56",
 );
 $selector-line-height: (
   "cl": "not-breakpoint-class",
@@ -205,7 +209,7 @@ $property-height: (
   "24",
   "40",
   "56",
-  "128"
+  "144",
 );
 $selector-height: (
   "cl": "not-breakpoint-class",

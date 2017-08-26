@@ -1,11 +1,11 @@
-import merge from 'webpack-merge';
+import merge from 'webpack-merge'
 
-export function store(object) {
+export function store (object) {
   return merge(object, {
-    namespaced: true,
-  });
+    namespaced: true
+  })
 }
 
 export default {
-  store,
-};
+  store
+}

@@ -1,10 +1,8 @@
-/* eslint-disable no-param-reassign */
+import graphConnection from '../../globals/graph'
+import { store } from '../../globals/mixins'
+import { gql } from '../../globals/utils'
 
-import { graph } from '../../globals/graph';
-import { store } from '../../globals/mixins';
-import { gql } from '../../globals/utils';
-
-const queryAllTags = graph.query(gql`{
+const queryAllTags = graphConnection.graph.query(gql`{
   allTags {
     name
     humans(orderBy: createdAt_DESC, filter: { private: false }) {
@@ -14,24 +12,24 @@ const queryAllTags = graph.query(gql`{
       private
     }
   }
-}`);
+}`)
 
 export default store({
   state: {
-    tags: [],
+    tags: []
   },
   getters: {
-    tags: state => state.tags,
+    tags: state => state.tags
   },
   actions: {
-    async getAllTags({ commit }) {
-      const tags = await queryAllTags();
-      commit('SET_ALL_TAGS', tags.allTags);
-    },
+    async getAllTags ({ commit }) {
+      const tags = await queryAllTags()
+      commit('SET_ALL_TAGS', tags.allTags)
+    }
   },
   mutations: {
-    SET_ALL_TAGS(state, result) {
-      state.tags = result;
-    },
-  },
-});
+    SET_ALL_TAGS (state, result) {
+      state.tags = result
+    }
+  }
+})
