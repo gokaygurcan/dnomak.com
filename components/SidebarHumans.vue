@@ -62,4 +62,7 @@
   .humans > *:first-child {
     border-top: 0!important;
   }
+  .search-icon svg {
+    fill: #E8E8E8;
+  }
 </style>
