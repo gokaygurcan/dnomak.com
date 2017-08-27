@@ -1,7 +1,7 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
-      .xl-tal.xl-p24.xl-mb24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.md-mb16
+      .xl-tal.xl-p24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200
         .wrap.xl-table.xl-gutter-24.md-normal.md-1
           .col.xl-width-168
             .xl-dib.xl-mb8.xl-lh0.xl-br8.xl-oh.xl-w144.xl-h144
@@ -10,11 +10,11 @@
             .xl-lh40.xl-fs18.xl-fw300
               | Herkese Merhaba,
               br
-              | Adım Doğukan Güven Nomak. Protel'de Frontend Developer olarak çalışmaktayım.
+              | Adım Doğukan Güven Nomak. İstanbul'da Arayüz Geliştiricisi olarak çalışmaktayım.
               br
-              | <a href="https://youtube.com/dnomak" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">YouTube</a> üzerinde Developer ve Designer arkadaşlarla birlikte çeşitli seriler altında video içerikler üreterek bu işe olan aşkımızı ve motivasyonumuzu arttırmaya çalışıyoruz :)
+              | <a href="https://youtube.com/dnomak" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">YouTube</a> üzerinde Geliştirici ve Tasarımcı arkadaşlarla birlikte çeşitli seriler altında video içerikler üreterek bu işe olan aşkımızı ve motivasyonumuzu arttırmaya çalışıyoruz :)
               br
-              | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a> ve <nuxt-link to="/svg-turkiye-haritasi" class="xl-di xl-fw600 xl-tdu xl-co-black-500">SVG Türkiye Haritası</nuxt-link to="/svg-turkiye-haritasi"> adında Open Source olarak geliştirdiğim iki projem var. Yeni projelerden haberdar olmak istersen beni diğer sosyal medya hesaplarından takip edebilirsin :)
+              | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a>,&nbsp;<a href="https://github.com/pixelperfectcss" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Pixel Perfect CSS</a> ve <nuxt-link to="svg-turkiye-haritasi" class="xl-di xl-fw600 xl-tdu xl-co-black-500">SVG Türkiye Haritası</nuxt-link to="svg-turkiye-haritasi"> adında Open Source olarak geliştirdiğim projelerim var. Yeni projelerden haberdar olmak istersen beni diğer sosyal medya hesaplarından takip edebilirsin :)
               br
               ul.links
                 li
@@ -36,6 +36,7 @@
                   a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://facebook.com/dnomak", target="_blank")
                     | Facebook
               | Görüşmek üzere, Sevgilerimle.
+      FooterView
     .col.xl-1-3
       SidebarPatreon
       SidebarHumans
@@ -48,6 +49,7 @@
   import SidebarHumans from '../components/SidebarHumans.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
   import SidebarGraphcool from '../components/SidebarGraphcool.vue'
+  import FooterView from '../components/FooterView.vue'
 
   export default {
     layout: 'main',
@@ -79,7 +81,8 @@
       SidebarPatreon,
       SidebarHumans,
       SidebarMailChimp,
-      SidebarGraphcool
+      SidebarGraphcool,
+      FooterView
     }
   }
 </script>

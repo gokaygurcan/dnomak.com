@@ -1,7 +1,7 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
-      .xl-tal.xl-p24.xl-mb24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.md-mb16
+      .xl-tal.xl-p24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200
         .il-isimleri
         .svg-turkiye-haritasi.xl-pt8
           div(v-html='svgTurkiyeHaritasi')
@@ -22,6 +22,7 @@
             li
               a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://commons.wikimedia.org/wiki/File:Turkey_provinces_blank_gray.svg", target="_blank")
                 | Harita Kaynağı
+      FooterView
     .col.xl-1-3
       SidebarPatreon
       SidebarHumans
@@ -34,6 +35,7 @@
   import SidebarHumans from '../components/SidebarHumans.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
   import SidebarGraphcool from '../components/SidebarGraphcool.vue'
+  import FooterView from '../components/FooterView.vue'
 
   export default {
     layout: 'main',
@@ -364,7 +366,8 @@
       SidebarPatreon,
       SidebarHumans,
       SidebarMailChimp,
-      SidebarGraphcool
+      SidebarGraphcool,
+      FooterView
     }
   }
 </script>

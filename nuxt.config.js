@@ -101,10 +101,7 @@ module.exports = {
   ],
   generate: {
     async routes () {
-      const urls = [
-        '/',
-        '/svg-turkiye-haritasi'
-      ]
+      const urls = []
       const results = await queryAllHumans()
       forEach(results.allHumans, function (human) {
         urls.push({

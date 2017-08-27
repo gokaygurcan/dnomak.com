@@ -8,7 +8,7 @@
         .xl-db.xl-py8.xl-px16.xl-co-black-500(v-if="!AllHumans.length")
           .xl-db.xl-wsnw.xl-oh.xl-toe Aradığın insanı bulamadım!
           .xl-db.xl-wsnw.xl-oh.xl-toe.xl-co-gray-500.xl-fsi En kısa zamanda sohbet yapmaya çalışacağım.
-        nuxt-link(v-for="human in AllHumans", :key="human.username").xl-db.xl-py8.xl-px16.ho-ba-gray-100.ho-co-black-500.ho-bo-gray-200.xl-ba-white.xl-co-black-500.xl-bwt1.xl-bo-gray-200.xl-cp(:to="human.username", exact)
+        nuxt-link(v-for="human in AllHumans", :key="human.username").xl-db.xl-py8.xl-px16.ho-ba-gray-100.ho-co-black-500.ho-bo-gray-200.xl-ba-white.xl-co-black-500.xl-bwt1.xl-bo-gray-200.xl-cp(:to="human.username")
           .xl-db.xl-wsnw.xl-oh.xl-toe {{ human.name }}
           .xl-db.xl-wsnw.xl-oh.xl-toe.xl-co-gray-500.xl-fsi {{ human.title }}
 </template>

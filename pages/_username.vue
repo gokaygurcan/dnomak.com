@@ -1,7 +1,7 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
-      .xl-mb16.xl-tal.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.xl-p24.lg-p16
+      .xl-tal.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.xl-p24.lg-px16
         .wrap.xl-auto.xl-gutter-16.xl-middle.xl-pr
           .col.sm-hidden(v-if='human.username')
             .avatar--human.xl-br8(:style="{ 'background-image': 'url(/img/avatar/' + human.username + '.jpg)' }")
@@ -25,6 +25,7 @@
               | {{ $t("globals.socialMedia") }}:
             .col(v-for='account in accounts')
               a.xl-dib.xl-co-black-500.ho-co-black-500.xl-fs14.xl-tdu(:href="`${account.website.url}${account.username}`", target="_blank") {{ account.website.name }}
+      FooterView
     .col.xl-1-3
       SidebarPatreon
       .xl-mb16(v-if='times.length')
@@ -33,9 +34,9 @@
         .xl-ba-white.xl-fs14.xl-lh20.xl-brb8.xl-bo-gray-200.xl-bw2.xl-oh
           .xl-ba-gray-100
             span(v-for='time in times')
-              a.xl-db.xl-py8.xl-px16.ho-ba-gray-100.ho-co-black-500.ho-bo-gray-200.xl-ba-white.xl-co-black-500.xl-bwt1.xl-bo-gray-200.xl-cp(@click.stop.prevent='changeQuestionTime(time.second)', :class="{'active': time.second === questionTime}")
-                span.xl-1-1.xl-db.xl-wsnw.xl-oh.xl-toe(v-if='$t("lang") === "tr"') {{ time.question.name }}
-                span.xl-1-1.xl-db.xl-wsnw.xl-oh.xl-toe(v-if='$t("lang") === "en"') {{ time.question.nameEnglish }}
+              a.xl-db.xl-py8.xl-px16.ho-ba-gray-100.ho-co-black-500.ho-bo-gray-200.xl-ba-white.xl-co-black-500.xl-bwt1.xl-bo-gray-200.xl-cp(@click.stop.prevent="changeQuestionTime(time.second)", :class="{'active': time.second === questionTime}")
+                span.xl-1-1.xl-db.xl-wsnw.xl-oh.xl-toe(v-if="$t('lang') === 'tr'") {{ time.question.name }}
+                span.xl-1-1.xl-db.xl-wsnw.xl-oh.xl-toe(v-if="$t('lang') === 'en'") {{ time.question.nameEnglish }}
       SidebarMailChimp
       SidebarGraphcool
 </template>
@@ -44,6 +45,7 @@
   import SidebarPatreon from '../components/SidebarPatreon.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
   import SidebarGraphcool from '../components/SidebarGraphcool.vue'
+  import FooterView from '../components/FooterView.vue'
 
   export default {
     layout: 'main',
@@ -129,7 +131,8 @@
     components: {
       SidebarPatreon,
       SidebarMailChimp,
-      SidebarGraphcool
+      SidebarGraphcool,
+      FooterView
     }
   }
 </script>
