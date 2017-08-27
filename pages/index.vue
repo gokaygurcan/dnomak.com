@@ -37,6 +37,7 @@
     .col.xl-1-3
       SidebarPatreon
       SidebarHumans
+      SidebarHumansChatbot
       SidebarMailChimp
       SidebarGraphcool
 </template>
@@ -44,6 +45,7 @@
 <script>
   import SidebarPatreon from '../components/SidebarPatreon.vue'
   import SidebarHumans from '../components/SidebarHumans.vue'
+  import SidebarHumansChatbot from '../components/SidebarHumansChatbot.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
   import SidebarGraphcool from '../components/SidebarGraphcool.vue'
   import FooterView from '../components/FooterView.vue'
@@ -77,6 +79,7 @@
     components: {
       SidebarPatreon,
       SidebarHumans,
+      SidebarHumansChatbot,
       SidebarMailChimp,
       SidebarGraphcool,
       FooterView

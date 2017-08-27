@@ -37,12 +37,14 @@
               a.xl-db.xl-py8.xl-px16.ho-ba-gray-100.ho-co-black-500.ho-bo-gray-200.xl-ba-white.xl-co-black-500.xl-bwt1.xl-bo-gray-200.xl-cp(@click.stop.prevent="changeQuestionTime(time.second)", :class="{'active': time.second === questionTime}")
                 span.xl-1-1.xl-db.xl-wsnw.xl-oh.xl-toe(v-if="$t('lang') === 'tr'") {{ time.question.name }}
                 span.xl-1-1.xl-db.xl-wsnw.xl-oh.xl-toe(v-if="$t('lang') === 'en'") {{ time.question.nameEnglish }}
+      SidebarHumansChatbot
       SidebarMailChimp
       SidebarGraphcool
 </template>
 
 <script>
   import SidebarPatreon from '../components/SidebarPatreon.vue'
+  import SidebarHumansChatbot from '../components/SidebarHumansChatbot.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
   import SidebarGraphcool from '../components/SidebarGraphcool.vue'
   import FooterView from '../components/FooterView.vue'
@@ -130,6 +132,7 @@
     },
     components: {
       SidebarPatreon,
+      SidebarHumansChatbot,
       SidebarMailChimp,
       SidebarGraphcool,
       FooterView
