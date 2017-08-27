@@ -1,23 +1,45 @@
 <template lang="pug">
-  .xl-tac.xl-px24.xl-mb24.xl-py16.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.md-mb16
-    .xl-db.xl-fs18.xl-lh40.xl-mt16.xl-mb40.xl-co-black-500
-      | Bu SVG Türkiye Haritasında 
-      .xl-dib.xl-fw600 İstanbul Asya 
-      |  ve 
-      .xl-dib.xl-fw600 Avrupa 
-      |  ayrı 
-      .xl-dib.xl-fw600 Kıbrıs 
-      |  da var hem de 
-      .xl-dib.xl-fw600 Responsive 
-      |  :)
-    .il-isimleri
-    .svg-turkiye-haritasi
-      div(v-html='svgTurkiyeHaritasi')
+  .wrap.xl-gutter-24.md-1
+    .col.xl-2-3
+      .xl-tal.xl-p24.xl-mb24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.md-mb16
+        .il-isimleri
+        .svg-turkiye-haritasi.xl-pt8
+          div(v-html='svgTurkiyeHaritasi')
+        .xl-lh40.xl-fs18.xl-fw300.xl-mt16
+          | Bu SVG Türkiye Haritasında 
+          .xl-dib.xl-fw600 İstanbul Asya 
+          |  ve 
+          .xl-dib.xl-fw600 Avrupa 
+          |  ayrı 
+          .xl-dib.xl-fw600 Kıbrıs 
+          |  da var hem de 
+          .xl-dib.xl-fw600 Responsive 
+          |  :)
+          ul.links
+            li
+              a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://github.com/dnomak/svg-turkiye-haritasi", target="_blank")
+                | GitHub
+            li
+              a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://commons.wikimedia.org/wiki/File:Turkey_provinces_blank_gray.svg", target="_blank")
+                | Harita Kaynağı
+    .col.xl-1-3
+      SidebarPatreon
+      SidebarHumans
+      SidebarMailChimp
+      SidebarGraphcool
 </template>
 
 <script>
+  import SidebarPatreon from '../components/SidebarPatreon.vue'
+  import SidebarHumans from '../components/SidebarHumans.vue'
+  import SidebarMailChimp from '../components/SidebarMailChimp.vue'
+  import SidebarGraphcool from '../components/SidebarGraphcool.vue'
+
   export default {
     layout: 'main',
+    async fetch ({ store }) {
+      await store.dispatch('humans/getAllHumans')
+    },
     head () {
       return {
         title: 'SVG Türkiye Haritası',
@@ -337,6 +359,12 @@
           }
         })
       }
+    },
+    components: {
+      SidebarPatreon,
+      SidebarHumans,
+      SidebarMailChimp,
+      SidebarGraphcool
     }
   }
 </script>

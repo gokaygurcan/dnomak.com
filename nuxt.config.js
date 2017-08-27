@@ -59,6 +59,9 @@ module.exports = {
       { rel: 'icon" type="image/png', sizes: '96x96', href: '/favicon/favicon-96x96.png' },
       { rel: 'icon" type="image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
       { rel: 'manifest', href: '/favicon/manifest.json' }
+    ],
+    script: [
+      { src: 'https://apis.google.com/js/platform.js' },
     ]
   },
   css: [

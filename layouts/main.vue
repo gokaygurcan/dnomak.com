@@ -18,3 +18,13 @@
     }
   }
 </script>
+
+<style>
+  ul.links {
+    margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+</style>

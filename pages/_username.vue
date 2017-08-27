@@ -174,9 +174,6 @@
     background-color: #1094F6;
     color: #FFFFFF;
   }
-  .graphcool-color {
-    color: #27ae60;
-  }
   .youtube {
     position: absolute;
     right: 8px;
