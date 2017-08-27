@@ -6,7 +6,7 @@
         .svg-turkiye-haritasi.xl-pt8
           div(v-html='svgTurkiyeHaritasi')
         .xl-lh40.xl-fs18.xl-fw300.xl-mt16
-          | {{ $t('pages.svgTurkeyMap.desc') }}
+          div(v-html="$t('pages.svgTurkeyMap.desc')")
           ul.links
             li
               a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://github.com/dnomak/svg-turkiye-haritasi", target="_blank")

@@ -25,7 +25,7 @@
     },
     "svgTurkeyMap": {
       "title": "SVG Türkiye Haritası",
-      "desc": "Bu SVG Türkiye Haritasında <span class='xl-dib.xl-fw600'>İstanbul Asya</span> ve <span class='xl-dib.xl-fw600'>Avrupa</span> ayrı <span class='xl-dib.xl-fw600'>Kıbrıs</span> da var hem de <span class='xl-dib.xl-fw600'>Responsive</span> :)"
+      "desc": "Bu SVG Türkiye Haritasında <span class='xl-dib xl-fw600'>İstanbul Asya</span> ve <span class='xl-dib xl-fw600'>Avrupa</span> ayrı <span class='xl-dib xl-fw600'>Kıbrıs</span> da var hem de <span class='xl-dib xl-fw600'>Responsive</span> :)"
     }
   }
 }
