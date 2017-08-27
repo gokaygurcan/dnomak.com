@@ -5,17 +5,14 @@
         .wrap.xl-table.xl-gutter-24.md-normal.md-1
           .col.xl-width-168
             .xl-dib.xl-mb8.xl-lh0.xl-br8.xl-oh.xl-w144.xl-h144
-              img.xl-h144(src='/img/avatar/dnomak.jpg', alt='Doğukan Güven Nomak')
+              img.xl-h144(src="/img/avatar/dnomak.jpg", alt="Doğukan Güven Nomak")
           .col
             .xl-lh40.xl-fs18.xl-fw300
-              | Herkese Merhaba,
-              br
-              | Adım Doğukan Güven Nomak. İstanbul'da Arayüz Geliştiricisi olarak çalışmaktayım.
-              br
-              | <a href="https://youtube.com/dnomak" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">YouTube</a> üzerinde Geliştirici ve Tasarımcı arkadaşlarla birlikte çeşitli seriler altında video içerikler üreterek bu işe olan aşkımızı ve motivasyonumuzu arttırmaya çalışıyoruz :)
-              br
-              | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a>,&nbsp;<a href="https://github.com/pixelperfectcss" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Pixel Perfect CSS</a> ve <nuxt-link to="svg-turkiye-haritasi" class="xl-di xl-fw600 xl-tdu xl-co-black-500">SVG Türkiye Haritası</nuxt-link to="svg-turkiye-haritasi"> adında Open Source olarak geliştirdiğim projelerim var. Yeni projelerden haberdar olmak istersen beni diğer sosyal medya hesaplarından takip edebilirsin :)
-              br
+              div {{ $t('pages.index.line01') }}
+              div {{ $t('pages.index.line02') }}
+              div(v-html="$t('pages.index.line03')")
+              div
+                | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a>,&nbsp;<a href="https://github.com/pixelperfectcss" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Pixel Perfect CSS</a> ve <nuxt-link to="svg-turkiye-haritasi" class="xl-di xl-fw600 xl-tdu xl-co-black-500">SVG Türkiye Haritası</nuxt-link to="svg-turkiye-haritasi"> adında Open Source olarak geliştirdiğim projelerim var. Yeni projelerden haberdar olmak istersen beni diğer sosyal medya hesaplarından takip edebilirsin :)
               ul.links
                 li
                   a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://youtube.com/dnomak", target="_blank")
@@ -35,7 +32,7 @@
                 li
                   a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://facebook.com/dnomak", target="_blank")
                     | Facebook
-              | Görüşmek üzere, Sevgilerimle.
+              div {{ $t('pages.index.line05') }}
       FooterView
     .col.xl-1-3
       SidebarPatreon

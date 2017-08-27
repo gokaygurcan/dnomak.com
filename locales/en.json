@@ -5,14 +5,27 @@
     "questions": "Questions",
     "dataSponsor": "Runs on",
     "contribute": "Contribute to the project!",
-    "coffee": "You can support us by buying us a cup of <strong>coffee</strong>.",
     "socialMedia": "Social Media",
-    "searchPlaceholder": "Search"
+    "searchPlaceholder": "Search",
+    "mapSource": "Map Source"
   },
   "mailchimp": {
     "id": "1ddadb165c",
     "name": "b_0cfb9d416ef45eba73b6368b6_1ddadb165c",
-    "emailAddress": "Email Address",
+    "emailAddress": "E-mail Address",
     "subscribe": "Subscribe"
+  },
+  "pages": {
+    "index": {
+      "line01": "Hi Everyone,",
+      "line02": "Adım Doğukan Güven Nomak. İstanbul'da Arayüz Geliştiricisi olarak çalışmaktayım.",
+      "line03": "<a href='https://youtube.com/dnomak' target='_blank' class='xl-di xl-fw600 xl-tdu xl-co-black-500'>YouTube</a> üzerinde Geliştirici ve Tasarımcı arkadaşlarla birlikte çeşitli seriler altında video içerikler üreterek bu işe olan aşkımızı ve motivasyonumuzu arttırmaya çalışıyoruz :)",
+      "line04": "",
+      "line05": "See you all, Love and Regards."
+    },
+    "svgTurkeyMap": {
+      "title": "SVG Turkey Map",
+      "desc": "Bu SVG Türkiye Haritasında <span class='xl-dib.xl-fw600'>İstanbul Asya</span> ve <span class='xl-dib.xl-fw600'>Avrupa</span> ayrı <span class='xl-dib.xl-fw600'>Kıbrıs</span> da var hem de <span class='xl-dib.xl-fw600'>Responsive</span> :)"
+    }
   }
 }

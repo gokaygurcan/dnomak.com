@@ -6,22 +6,14 @@
         .svg-turkiye-haritasi.xl-pt8
           div(v-html='svgTurkiyeHaritasi')
         .xl-lh40.xl-fs18.xl-fw300.xl-mt16
-          | Bu SVG Türkiye Haritasında 
-          .xl-dib.xl-fw600 İstanbul Asya 
-          |  ve 
-          .xl-dib.xl-fw600 Avrupa 
-          |  ayrı 
-          .xl-dib.xl-fw600 Kıbrıs 
-          |  da var hem de 
-          .xl-dib.xl-fw600 Responsive 
-          |  :)
+          | {{ $t('pages.svgTurkeyMap.desc') }}
           ul.links
             li
               a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://github.com/dnomak/svg-turkiye-haritasi", target="_blank")
                 | GitHub
             li
               a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://commons.wikimedia.org/wiki/File:Turkey_provinces_blank_gray.svg", target="_blank")
-                | Harita Kaynağı
+                | {{ $t('globals.mapSource') }}
       FooterView
     .col.xl-1-3
       SidebarPatreon
@@ -44,11 +36,11 @@
     },
     head () {
       return {
-        title: 'SVG Türkiye Haritası',
+        title: this.$i18n.t('pages.svgTurkeyMap.title'),
         meta: [
           { name: 'description', hid: 'description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive :)' },
           // Open Grapg
-          { name: 'og:title', content: 'SVG Türkiye Haritası' },
+          { name: 'og:title', content: this.$i18n.t('pages.svgTurkeyMap.title') },
           { name: 'og:description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive :)' },
           { name: 'og:type', content: 'website' },
           { name: 'og:url', content: `http://dnomak.com/svg-turkiye-haritasi` },
@@ -56,10 +48,10 @@
           // Twitter Card
           { name: 'twitter:card', content: 'summary_large_image' },
           { name: 'twitter:site', content: '@dnomak' },
-          { name: 'twitter:title', content: 'SVG Türkiye Haritası' },
+          { name: 'twitter:title', content: this.$i18n.t('pages.svgTurkeyMap.title') },
           { name: 'twitter:description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive :)' },
           { name: 'twitter:image', content: `http://dnomak.com/img/svg-turkiye-haritasi.jpg` },
-          { name: 'twitter:image:alt', content: 'SVG Türkiye Haritası' }
+          { name: 'twitter:image:alt', content: this.$i18n.t('pages.svgTurkeyMap.title') }
         ]
       }
     },

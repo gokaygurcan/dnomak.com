@@ -6,7 +6,7 @@ const graph = graphql("https://api.graph.cool/simple/v1/dnomak", {
 })
 
 const queryAllHumans = graph(`query {
-  allHumans(orderBy: createdAt_DESC, filter: {private: false}) {
+  allHumans(orderBy: createdAt_DESC) {
     id
     name
     title

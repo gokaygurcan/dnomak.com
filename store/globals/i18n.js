@@ -5,5 +5,13 @@ export default {
   },
   getters: {
     locale: state => state.locale
+  },
+  actions: {
+    set: ({ commit }, locale) => commit('SET', locale)
+  },
+  mutations: {
+    SET (state, locale) {
+      state.locale = locale
+    }
   }
 }

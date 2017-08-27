@@ -3,10 +3,18 @@
     .col.lg-hidden
     .col.xl-fs14.xl-tar.lg-tac
       a.xl-di.xl-co-gray-500(href='http://flexible.gs', target='_blank')
-        span.xl-di.xl-vam.xl-pr8 Flexible Grid System'i
-        span.xl-co-red-300
-          span.xl-dib.xl-vam.xl-lh0(v-html='heartIcon')
-          span.xl-di.xl-vam.xl-pl8 Seviyorum
+        template(v-if="$t('lang') === 'tr'")
+          span.xl-di.xl-vam.xl-pr8 Flexible Grid System'i
+          span.xl-co-red-300
+            span.xl-dib.xl-vam.xl-lh0(v-html='heartIcon')
+            span.xl-di.xl-vam.xl-pl8 Seviyorum
+        template(v-if="$t('lang') === 'en'")
+          span.xl-di.xl-vam.xl-pr8 I
+          span.xl-co-red-300
+            span.xl-dib.xl-vam.xl-lh0(v-html='heartIcon')
+            span.xl-di.xl-vam.xl-pl8 Love
+          span.xl-di.xl-vam.xl-pl8 Flexible Grid System
+
 </template>
 
 <script>
