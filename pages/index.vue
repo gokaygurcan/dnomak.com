@@ -12,7 +12,7 @@
               div {{ $t('pages.index.line02') }}
               div(v-html="$t('pages.index.line03')")
               div
-                | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a>,&nbsp;<a href="https://github.com/pixelperfectcss" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Pixel Perfect CSS</a> ve <nuxt-link to="svg-turkiye-haritasi" class="xl-di xl-fw600 xl-tdu xl-co-black-500">SVG Türkiye Haritası</nuxt-link to="svg-turkiye-haritasi"> adında Open Source olarak geliştirdiğim projelerim var. Yeni projelerden haberdar olmak istersen beni diğer sosyal medya hesaplarından takip edebilirsin :)
+                | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a>,&nbsp;<a href="https://github.com/pixelperfectcss" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Pixel Perfect CSS</a> ve <nuxt-link to="/svg-turkiye-haritasi" class="xl-di xl-fw600 xl-tdu xl-co-black-500">SVG Türkiye Haritası</nuxt-link to="svg-turkiye-haritasi"> adında Open Source olarak geliştirdiğim projelerim var. Yeni projelerden haberdar olmak istersen beni diğer sosyal medya hesaplarından takip edebilirsin :)
               ul.links
                 li
                   a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://youtube.com/dnomak", target="_blank")
