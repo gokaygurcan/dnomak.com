@@ -40,10 +40,10 @@
       return {
         title: this.$i18n.t('pages.svgTurkeyMap.title'),
         meta: [
-          { name: 'description', hid: 'description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive :)' },
+          { name: 'description', hid: 'description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive.' },
           // Open Grapg
           { name: 'og:title', content: this.$i18n.t('pages.svgTurkeyMap.title') },
-          { name: 'og:description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive :)' },
+          { name: 'og:description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive.' },
           { name: 'og:type', content: 'website' },
           { name: 'og:url', content: `http://dnomak.com/svg-turkiye-haritasi` },
           { name: 'og:image', content: `http://dnomak.com/img/svg-turkiye-haritasi.jpg` },
@@ -51,7 +51,7 @@
           { name: 'twitter:card', content: 'summary_large_image' },
           { name: 'twitter:site', content: '@dnomak' },
           { name: 'twitter:title', content: this.$i18n.t('pages.svgTurkeyMap.title') },
-          { name: 'twitter:description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive :)' },
+          { name: 'twitter:description', content: 'Bu SVG Türkiye Haritasında İstanbul Asya  ve Avrupa  ayrı Kıbrıs  da var hem de Responsive.' },
           { name: 'twitter:image', content: `http://dnomak.com/img/svg-turkiye-haritasi.jpg` },
           { name: 'twitter:image:alt', content: this.$i18n.t('pages.svgTurkeyMap.title') }
         ]

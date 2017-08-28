@@ -18,14 +18,13 @@
   "pages": {
     "index": {
       "line01": "Hi Everyone,",
-      "line02": "Adım Doğukan Güven Nomak. İstanbul'da Arayüz Geliştiricisi olarak çalışmaktayım.",
-      "line03": "<a href='https://youtube.com/dnomak' target='_blank' class='xl-di xl-fw600 xl-tdu xl-co-black-500'>YouTube</a> üzerinde Geliştirici ve Tasarımcı arkadaşlarla birlikte çeşitli seriler altında video içerikler üreterek bu işe olan aşkımızı ve motivasyonumuzu arttırmaya çalışıyoruz :)",
-      "line04": "",
-      "line05": "See you all, Love and Regards."
+      "line02": "I'm Doğukan Güven Nomak. I work as a Frontend Developer in Istanbul.",
+      "line03": "We are trying to increase our love and motivation for this job by producing different series of talks on <a href='https://youtube.com/dnomak' target='_blank' class='xl-di xl-fw600 xl-tdu xl-co-black-500'>YouTube</a> with our Developer and Designer friends.",
+      "line04": "See you all, Love and Regards."
     },
     "svgTurkeyMap": {
       "title": "SVG Turkey Map",
-      "desc": "Bu SVG Türkiye Haritasında <span class='xl-dib xl-fw600'>İstanbul Asya</span> ve <span class='xl-dib xl-fw600'>Avrupa</span> ayrı <span class='xl-dib xl-fw600'>Kıbrıs</span> da var hem de <span class='xl-dib xl-fw600'>Responsive</span> :)"
+      "desc": "SVG Turkey Map contains apart <span class='xl-dib xl-fw600'>İstanbul Asia</span> and <span class='xl-dib xl-fw600'>Europe</span>, <span class='xl-dib xl-fw600'>Cyprus</span>. Also <span class='xl-dib xl-fw600'>Responsive</span>."
     }
   }
 }
