@@ -3,7 +3,7 @@
     .xl-pr
       .search-icon.xl-vam.xl-dib.xl-lh0.xl-pa.xl-r16.xl-tty-50p.xl-t50p(v-html='searchIcon')
       input(v-model="keyword", @input="searchInHumans", :placeholder="$t('globals.searchPlaceholder')").xl-1-1.xl-db.xl-h56.xl-ba-white.xl-bw2.xl-bo-gray-200.xl-br8.xl-mb8.xl-brb0.xl-pl16.pl-co-gray-300.xl-fs16
-    .xl-ba-white.xl-fs14.xl-lh20.xl-br8.xl-bo-gray-200.xl-bw2.xl-os
+    .xl-ba-white.xl-fs14.xl-lh20.xl-br8.xl-bo-gray-200.xl-bw2.xl-oh
       .humans
         .xl-db.xl-py8.xl-px16.xl-co-black-500(v-if="!AllHumans.length")
           .xl-db.xl-wsnw.xl-oh.xl-toe Aradığın insanı bulamadım!
@@ -58,6 +58,7 @@
   .humans {
     max-height: 284px;
     overflow: scroll;
+    overflow-x: hidden;
   }
   .humans > *:first-child {
     border-top: 0!important;

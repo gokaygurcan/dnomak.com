@@ -95,6 +95,9 @@ module.exports = {
     ],
     vendor: ['vue-i18n', 'vue-youtube-embed']
   },
+  modules: [
+    ['@nuxtjs/google-analytics', { ua: 'UA-25094721-10' }],
+  ],
   plugins: [
     { src: '~/plugins/i18n' },
     { src: '~/plugins/youtube', ssr: false }
