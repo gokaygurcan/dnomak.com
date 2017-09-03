@@ -43,6 +43,9 @@
                 li
                   a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://facebook.com/dnomak", target="_blank")
                     | Facebook
+                li
+                  a.xl-di.xl-co-black-500.xl-fs18.xl-fw600.xl-tdu(href="https://calismamasam.com/dogukan-guven-nomak", target="_blank")
+                    | Çalışma Masam
               div {{ $t('pages.index.line04') }}
       FooterView
     .col.xl-1-3
