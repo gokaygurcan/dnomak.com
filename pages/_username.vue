@@ -1,6 +1,7 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
+      Udemy
       .xl-tal.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.xl-p24.lg-px16
         .wrap.xl-auto.xl-gutter-16.xl-middle.xl-pr
           .col.sm-hidden(v-if='human.username')
@@ -43,6 +44,7 @@
 </template>
 
 <script>
+  import Udemy from '../components/Udemy.vue'
   import SidebarPatreon from '../components/SidebarPatreon.vue'
   import SidebarHumansChatbot from '../components/SidebarHumansChatbot.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
@@ -131,6 +133,7 @@
       }
     },
     components: {
+      Udemy,
       SidebarPatreon,
       SidebarHumansChatbot,
       SidebarMailChimp,

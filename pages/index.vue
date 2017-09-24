@@ -1,6 +1,7 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
+      Udemy
       .xl-tal.xl-p24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200
         .wrap.xl-table.xl-gutter-24.md-normal.md-1
           .col.xl-width-168
@@ -57,6 +58,7 @@
 </template>
 
 <script>
+  import Udemy from '../components/Udemy.vue'
   import SidebarPatreon from '../components/SidebarPatreon.vue'
   import SidebarHumans from '../components/SidebarHumans.vue'
   import SidebarHumansChatbot from '../components/SidebarHumansChatbot.vue'
@@ -91,6 +93,7 @@
       }
     },
     components: {
+      Udemy,
       SidebarPatreon,
       SidebarHumans,
       SidebarHumansChatbot,
