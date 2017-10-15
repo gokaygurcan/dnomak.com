@@ -11,6 +11,15 @@
           .udemy-button.xl-db.xl-lh56.xl-h56.xl-co-black.xl-fw600.xl-br8.xl-tac.xl-fs18.xl-brl0 SATIN AL
 </template>
 
+<script>
+  export default {
+    data () {
+      return {
+      }
+    }
+  }
+</script>
+
 <style>
   .udemy-wrap {
     border-color: #28DFCD;
