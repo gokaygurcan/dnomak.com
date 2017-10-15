@@ -1,7 +1,18 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
-      Udemy
+      //- Udemy
+      a(target="_black" href="http://dnomak.com/udemy/").udemy-wrap.xl-br8.xl-bw2.xl-mb16.xl-co-black-500.xl-db
+        .udemy-content.xl-p16
+          .wrap.xl-gutter-16.xl-middle
+            .col.xl-3-12.sm-4-12
+              .udemy-image.xl-br8
+            .col.xl-6-12.sm-8-12
+              .xl-lh24.xl-fs18.xl-fw600.xl-mb8 Web Geliştiricisi Olmanın Temelleri
+              .xl-lh24.xl-fs14 HTML, CSS ve Flexible Grid System ile kendi web sayfalarınızı tüm mobil cihazlara uygun şekilde kodlamayı öğrenin!
+            .col.xl-3-12.sm-1-1.sm-mt16
+              .udemy-button.xl-db.xl-lh56.xl-h56.xl-co-black.xl-fw600.xl-br8.xl-tac.xl-fs18.xl-brl0 SATIN AL
+      //- Udemy
       .xl-tal.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200.xl-p24.lg-px16
         .wrap.xl-auto.xl-gutter-16.xl-middle.xl-pr
           .col.sm-hidden(v-if='human.username')
@@ -44,7 +55,6 @@
 </template>
 
 <script>
-  import Udemy from '../components/Udemy.vue'
   import SidebarPatreon from '../components/SidebarPatreon.vue'
   import SidebarHumansChatbot from '../components/SidebarHumansChatbot.vue'
   import SidebarMailChimp from '../components/SidebarMailChimp.vue'
@@ -133,7 +143,6 @@
       }
     },
     components: {
-      Udemy,
       SidebarPatreon,
       SidebarHumansChatbot,
       SidebarMailChimp,
