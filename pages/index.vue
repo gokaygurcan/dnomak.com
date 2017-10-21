@@ -23,6 +23,8 @@
               div {{ $t('pages.index.line01') }}
               div {{ $t('pages.index.line02') }}
               div(v-html="$t('pages.index.line03')")
+              a(href="https://kit.com/dnomak", target="_blank").xl-lh0.xl-my16.xl-br8.xl-oh.xl-db
+                img.xl-1-1(src="/img/ekipmanlarim.jpg", alt="Ekipmanlarım")
               div
                 template(v-if="$t('lang') === 'tr'")
                   | <a href="http://flexible.gs" target="_blank" class="xl-di xl-fw600 xl-tdu xl-co-black-500">Flexible Grid System</a>,
