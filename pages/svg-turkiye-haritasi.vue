@@ -1,18 +1,7 @@
 <template lang="pug">
   .wrap.xl-gutter-24.md-1
     .col.xl-2-3
-      //- Udemy
-      a(target="_black" href="http://dnomak.com/udemy/").udemy-wrap.xl-br8.xl-bw2.xl-mb16.xl-co-black-500.xl-db
-        .udemy-content.xl-p16
-          .wrap.xl-gutter-16.xl-middle
-            .col.xl-3-12.sm-4-12
-              .udemy-image.xl-br8
-            .col.xl-6-12.sm-8-12
-              .xl-lh24.xl-fs18.xl-fw600.xl-mb8 Web Geliştiricisi Olmanın Temelleri
-              .xl-lh24.xl-fs14 HTML, CSS ve Flexible Grid System ile kendi web sayfalarınızı tüm mobil cihazlara uygun şekilde kodlamayı öğrenin!
-            .col.xl-3-12.sm-1-1.sm-mt16
-              .udemy-button.xl-db.xl-lh56.xl-h56.xl-co-black.xl-fw600.xl-br8.xl-tac.xl-fs18.xl-brl0 KAYIT OL
-      //- Udemy
+      Udemy
       .xl-tal.xl-p24.xl-co-black-500.xl-br8.xl-ba-white.xl-bw2.xl-bo-gray-200
         .il-isimleri
         .svg-turkiye-haritasi.xl-pt8
@@ -36,6 +25,7 @@
 </template>
 
 <script>
+  import Udemy from '../components/Udemy.vue'
   import SidebarPatreon from '../components/SidebarPatreon.vue'
   import SidebarHumans from '../components/SidebarHumans.vue'
   import SidebarHumansChatbot from '../components/SidebarHumansChatbot.vue'
@@ -369,6 +359,7 @@
       }
     },
     components: {
+      Udemy,
       SidebarPatreon,
       SidebarHumans,
       SidebarHumansChatbot,
