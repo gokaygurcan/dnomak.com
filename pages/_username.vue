@@ -15,6 +15,8 @@
                   .xl-dib.xl-ba-black-500.xl-co-white.xl-py4.xl-px8.xl-br4.xl-ffscp.xl-fs14.xl-my8 {{ tag.name }}
             div.xl-lh24(v-if='human.title')
               |{{ human.title }}
+            .youtube
+              a.pulse(target='_blank', href='https://www.youtube.com/channel/UCbu25feEIe6fY9fZx8BCMSA?sub_confirmation=1') ABONE OL
         .xl-oh.xl-br8.xl-lh0.xl-mt24
           .embed-responsive.embed-responsive-16by9(v-if='videoLoading')
             .embed-responsive-item
@@ -186,5 +188,47 @@
     position: absolute;
     right: 8px;
     bottom: 0;
+  }
+  .pulse {
+    display: block;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #FF0000;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(255,0,0, 0.4);
+    animation: pulse 1s infinite;
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,0,0, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 0.4);
+      box-shadow: 0 0 0 0 rgba(255,0,0, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+        box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+        box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+    }
   }
 </style>
