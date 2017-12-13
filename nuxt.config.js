@@ -62,6 +62,8 @@ module.exports = {
     ],
     script: [
       { src: 'https://apis.google.com/js/platform.js' },
+      { src: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js', async:'async' },
+      { src: '/js/one-signal.js' },
     ]
   },
   css: [
