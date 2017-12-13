@@ -58,12 +58,12 @@ module.exports = {
       { rel: 'icon" type="image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' },
       { rel: 'icon" type="image/png', sizes: '96x96', href: '/favicon/favicon-96x96.png' },
       { rel: 'icon" type="image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
-      { rel: 'manifest', href: '/favicon/manifest.json' }
+      { rel: 'manifest', href: '/favicon/manifest.json' },
+      { rel: 'manifest', href: '/manifest.json' }
     ],
     script: [
-      { src: 'https://apis.google.com/js/platform.js' },
       { src: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js', async:'async' },
-      { src: '/js/one-signal.js' },
+      { src: '/OneSignalConfig.js' }
     ]
   },
   css: [
