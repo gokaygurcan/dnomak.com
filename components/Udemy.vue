@@ -1,5 +1,5 @@
 <template lang="pug">
-  a.udemy-wrap.xl-br8.xl-bw2.xl-mb16.xl-co-black-500.xl-db(target="_blank" href="http://dnomak.com/udemy/")
+  a.udemy-wrap.xl-br8.xl-bw2.xl-mb16.xl-co-black-500.xl-db(target="_blank" href="https://dnomak.com/udemy/")
     .udemy-content.xl-p16
       .wrap.xl-gutter-16.xl-middle
         .col.xl-3-12.sm-4-12
@@ -26,7 +26,7 @@
     background-color: white;
   }
   .udemy-image {
-    background: url('http://dnomak.com/img/web-gelistiricisi-olmanin-temelleri.jpg');
+    background: url('https://dnomak.com/img/web-gelistiricisi-olmanin-temelleri.jpg');
     height: 124px;
     background-size: cover;
     background-position: center center;

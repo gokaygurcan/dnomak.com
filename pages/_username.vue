@@ -82,14 +82,14 @@
           { name: 'og:title', content: this.human.name },
           { name: 'og:description', content: this.human.title },
           { name: 'og:type', content: 'website' },
-          { name: 'og:url', content: `http://dnomak.com/${this.human.username}` },
-          { name: 'og:image', content: `http://dnomak.com/img/avatar/${this.human.username}.jpg` },
+          { name: 'og:url', content: `https://dnomak.com/${this.human.username}` },
+          { name: 'og:image', content: `https://dnomak.com/img/avatar/${this.human.username}.jpg` },
           // Twitter Card
           { name: 'twitter:card', content: 'summary' },
           { name: 'twitter:site', content: '@dnomak' },
           { name: 'twitter:title', content: this.human.name },
           { name: 'twitter:description', content: this.human.title },
-          { name: 'twitter:image', content: `http://dnomak.com/img/avatar/${this.human.username}.jpg` },
+          { name: 'twitter:image', content: `https://dnomak.com/img/avatar/${this.human.username}.jpg` },
           { name: 'twitter:image:alt', content: this.human.name }
         ]
       }

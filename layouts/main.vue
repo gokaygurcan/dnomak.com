@@ -44,7 +44,7 @@
     background-color: white;
   }
   .udemy-image {
-    background: url('http://dnomak.com/img/web-gelistiricisi-olmanin-temelleri.jpg');
+    background: url('https://dnomak.com/img/web-gelistiricisi-olmanin-temelleri.jpg');
     height: 124px;
     background-size: cover;
     background-position: center center;

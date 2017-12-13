@@ -80,14 +80,14 @@
           { name: 'og:title', content: 'Doğukan Güven Nomak' },
           { name: 'og:description', content: 'Frontend Developer' },
           { name: 'og:type', content: 'website' },
-          { name: 'og:url', content: `http://dnomak.com` },
-          { name: 'og:image', content: `http://dnomak.com/img/avatar/dnomak.jpg` },
+          { name: 'og:url', content: `https://dnomak.com` },
+          { name: 'og:image', content: `https://dnomak.com/img/avatar/dnomak.jpg` },
           // Twitter Card
           { name: 'twitter:card', content: 'summary' },
           { name: 'twitter:site', content: '@dnomak' },
           { name: 'twitter:title', content: 'Doğukan Güven Nomak' },
           { name: 'twitter:description', content: 'Frontend Developer' },
-          { name: 'twitter:image', content: `http://dnomak.com/img/avatar/dnomak.jpg` },
+          { name: 'twitter:image', content: `https://dnomak.com/img/avatar/dnomak.jpg` },
           { name: 'twitter:image:alt', content: 'Doğukan Güven Nomak' }
         ]
       }
