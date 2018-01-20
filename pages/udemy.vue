@@ -25,7 +25,7 @@
       }
     },
     mounted () {
-      window.location.href = 'https://www.udemy.com/web-gelistiricisi-olmann-temelleri/?couponCode=K8T9ZG'
+      window.location.href = 'https://www.udemy.com/web-gelistiricisi-olmann-temelleri/?couponCode=DNOMAK'
     }
   }
 </script>
