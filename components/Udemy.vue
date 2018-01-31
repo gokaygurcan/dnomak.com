@@ -8,7 +8,10 @@
           .xl-lh24.xl-fs18.xl-fw600.xl-mb8 Web Geliştiricisi Olmanın Temelleri
           .xl-lh24.xl-fs14 HTML, CSS ve Flexible Grid System ile kendi web sayfalarınızı tüm mobil cihazlara uygun şekilde kodlamayı öğrenin!
         .col.xl-3-12.sm-1-1.sm-mt16
-          .udemy-button.xl-db.xl-lh56.xl-h56.xl-co-black.xl-fw600.xl-br8.xl-tac.xl-fs18.xl-brl0 KAYIT OL
+          .xl-lh24.xl-tac.xl-mb8.xl-fs14.udemy-color Ekstra <span class="xl-fw700">%75</span> indirimli fiyat
+          .udemy-button.xl-db.xl-lh56.xl-h56.xl-co-black.xl-fw700.xl-br8.xl-tac.xl-fs18.xl-brl0.xl-pr
+            | SATIN AL
+            .udemy-price.xl-br4 ₺24,99
 </template>
 
 <script>
@@ -37,5 +40,18 @@
   }
   .udemy-button {
     background: #28DFCD;
+  }
+  .udemy-price {
+    position: absolute;
+    width: 64px;
+    text-align: center;
+    bottom: -12px;
+    right: -8px;
+    z-index: 2;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    height: 24px;
+    border: 2px solid #222222;
   }
 </style>
