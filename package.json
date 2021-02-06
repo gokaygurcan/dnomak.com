@@ -34,7 +34,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "flexiblegs-scss": "^5.5.3",
     "flexiblegs-scss-plus": "^5.5.3",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "pixelperfectcss-scss": "^1.0.2",
     "pug": "^2.0.0-rc.3",
     "pug-loader": "^2.3.0",
